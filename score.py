@@ -6,7 +6,16 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import os
+import platform
 import time
+
+def clear_screen():
+    """Função para limpar a tela de forma multiplataforma"""
+    if platform.system() == "Windows":
+        os.system('cls')
+    else:
+        os.system('clear')
 
 servico = Service(ChromeDriverManager().install())
 
@@ -177,15 +186,17 @@ while True:
             limites_faltas.append(carga_horaria)
             counter += 1
     elif escolha == 2:
-        print('a')
         # Chamar a função calcular
         resultado = calcular(notas, limites_faltas)
         print("Resultado do cálculo:", resultado)
+        input("Aperte ENTER para voltar ao MENU")
+        clear_screen()
     elif escolha == 3:
         print(notas)
         print(limites_faltas)
     else:
         print("Opção inválida")
+        clear_screen()
 
 # Aguarda alguns segundos antes de fechar o navegador (apenas para fins de demonstração)
 input("aperte enter para sair")
