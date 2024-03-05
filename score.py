@@ -59,10 +59,10 @@ print(valores)
 contador = 0
 
 while contador < len(valores):
-    time.sleep(2)
+    time.sleep(1)
     html_content = navegador.page_source
     # Espera explícita até que pelo menos um elemento seja encontrado
-    wait = WebDriverWait(navegador, 2)
+    wait = WebDriverWait(navegador, 1)
 
     # Iterar sobre os elementos <span> com IDs correspondentes às notas
     for i in range(12):  # Assumindo que os IDs seguem o padrão fornecido
@@ -86,7 +86,7 @@ while contador < len(valores):
     # Lista para armazenar os limites de faltas
 
     # Espera explícita até que pelo menos um elemento seja encontrado
-    wait = WebDriverWait(navegador, 2)
+    wait = WebDriverWait(navegador, 1)
 
     # Iterar sobre os elementos <span> com IDs correspondentes aos limites de faltas
     for i in range(12):  # Assumindo que os IDs seguem o padrão fornecido
@@ -103,6 +103,8 @@ while contador < len(valores):
                 limite_faltas = "60"
             elif limite_faltas.startswith("22"):
                 limite_faltas = "90"
+            elif limite_faltas.startswith("18"):
+                limite_faltas = "75"
             elif limite_faltas.startswith("7"):
                 limite_faltas = "30"
             elif limite_faltas.startswith("11"):
