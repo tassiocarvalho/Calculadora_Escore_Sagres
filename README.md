@@ -23,3 +23,5 @@ Este projeto tem como objetivo automatizar o cálculo do escore para o sistema a
 
 **Considerações Finais:**
 Este projeto demonstra como é possível automatizar tarefas repetitivas e simplificar processos utilizando ferramentas como o Selenium em conjunto com Python. A automação da calculadora de escore para o Sagres oferece mais praticidade aos estudantes ao calcular seu desempenho acadêmico de forma rápida e eficiente.
+
+Observações testes realizados em 2024 em uma conta do sagres com todas notas fechadas, o código não faz calculo com algumas disciplinas em aberto por enquanto     
