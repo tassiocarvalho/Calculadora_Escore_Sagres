@@ -16,10 +16,16 @@ Este projeto tem como objetivo automatizar o cálculo do escore para o sistema a
 
 **Instruções de Uso:**
 1. Clone o repositório do projeto do GitHub em sua máquina local.
-2. Certifique-se de ter o Python e o Selenium instalados.
-3. Execute o script `score.py`.
-4. Siga as instruções apresentadas na interface de usuário para adicionar disciplinas de semestre extraordinário, calcular o escore ou exibir a lista de notas e horários.
-5. Após a conclusão das operações desejadas, pressione Enter para sair do programa.
+2. Certifique-se de ter o Python e o Selenium instalados,
+   instalando as bibliotecas necessárias utilizando o pip. Abra o terminal ou prompt de comando e execute os seguintes comandos:
+   ```
+   pip install selenium
+   pip install webdriver_manager
+   ```
+   Isso irá instalar as bibliotecas Selenium e Webdriver Manager, que são utilizadas para automatizar a interação com o navegador web.
+4. Execute o script `score.py`.
+5. Siga as instruções apresentadas na interface de usuário para adicionar disciplinas de semestre extraordinário, calcular o escore ou exibir a lista de notas e horários.
+6. Após a conclusão das operações desejadas, pressione Enter para sair do programa.
 
 **Considerações Finais:**
 Este projeto demonstra como é possível automatizar tarefas repetitivas e simplificar processos utilizando ferramentas como o Selenium em conjunto com Python. A automação da calculadora de escore para o Sagres oferece mais praticidade aos estudantes ao calcular seu desempenho acadêmico de forma rápida e eficiente.
