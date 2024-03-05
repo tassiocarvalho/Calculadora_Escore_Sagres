@@ -17,7 +17,7 @@ Este projeto tem como objetivo automatizar o cálculo do escore para o sistema a
 **Instruções de Uso:**
 1. Clone o repositório do projeto do GitHub em sua máquina local.
 2. Certifique-se de ter o Python e o Selenium instalados.
-3. Execute o script `calculadora_escore_sagres.py`.
+3. Execute o script `score.py`.
 4. Siga as instruções apresentadas na interface de usuário para adicionar disciplinas de semestre extraordinário, calcular o escore ou exibir a lista de notas e horários.
 5. Após a conclusão das operações desejadas, pressione Enter para sair do programa.
 
