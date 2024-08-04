@@ -33,5 +33,5 @@ Este projeto demonstra como é possível automatizar tarefas repetitivas e simpl
 
 **Observações testes realizados em 2024 em uma conta do sagres com todas notas fechadas, o código não faz calculo com algumas disciplinas em aberto(disciplinas que os professores não fecharam nota) por enquanto!**        
 
-
+Verificar versão do Chrome Driver com a versão do Chrome e instalar no link: https://googlechromelabs.github.io/chrome-for-testing/#stable
 
