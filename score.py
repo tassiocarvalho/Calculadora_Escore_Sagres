@@ -10,6 +10,9 @@ import os
 import platform
 import time
 
+
+servico = Service(ChromeDriverManager(driver_version="131.0.6778.205").install())
+navegador = webdriver.Chrome(service=servico)
 def clear_screen():
     """Função para limpar a tela de forma multiplataforma"""
     if platform.system() == "Windows":
@@ -17,9 +20,9 @@ def clear_screen():
     else:
         os.system('clear')
 
-servico = Service(ChromeDriverManager().install())
+#servico = Service(ChromeDriverManager().install())
 
-navegador = webdriver.Chrome(service=servico)
+#navegador = webdriver.Chrome(service=servico)
 
 navegador.get("https://academico.uefs.br/PortalSagres/Acesso.aspx?st=1")
 
